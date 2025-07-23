@@ -1,7 +1,7 @@
 ># Windows
 
 ## Description
-Use **playwright** to put `.html` on the web page and crawl the required data
+Use **playwright** and **beautifulsoup4** to put `.html` on the web page and crawl the required data
 
 ## Install
 
