@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>Airtest Report </title>
+    
+    <!--[if lt IE 9]>
+    <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="static//css/report.css" rel="stylesheet">
+
+    <script src="static//js/jquery-1.10.2.min.js"></script>
+    <script src="static//js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="static//js/langpack/zh_CN.js" charset="utf-8" type="text/javascript"></script>
+    <script src="static//js/lazyload.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+      data = {"steps": [{"title": "connect_mobile", "time": 1753074539.684384, "code": {"name": "connect_mobile", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}]}, "screen": {"src": null, "rect": [], "pos": [], "vector": [], "confidence": null}, "desc": null, "traceback": "", "log": "", "assert": null}, {"title": "clear_wifi_profile_samsung", "time": 1753074562.0175424, "code": {"name": "clear_wifi_profile_samsung", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}]}, "screen": {"src": null, "rect": [], "pos": [], "vector": [], "confidence": null}, "desc": null, "traceback": "", "log": "", "assert": null}, {"title": "wifi_connection", "time": 1753074597.6015766, "code": {"name": "wifi_connection", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}]}, "screen": {"src": null, "rect": [], "pos": [], "vector": [], "confidence": null}, "desc": null, "traceback": "", "log": "", "assert": null}, {"title": "[log]Ip Address", "time": 1753074617.6860068, "code": null, "screen": null, "desc": null, "traceback": null, "log": "45: wlan0: {BROADCAST,MULTICAST,UP,LOWER_UP} mtu 1500 qdisc mq state UP group default qlen 3000\r\n    link/ether 96:22:00:4a:48:81 brd ff:ff:ff:ff:ff:ff\r\n    inet 10.0.0.61/24 brd 10.0.0.255 scope global wlan0\r\n       valid_lft forever preferred_lft forever\r\n    inet6 2001:50:7:55c:2f0d:7df2:b957:bbca/64 scope global temporary dynamic \r\n       valid_lft 295sec preferred_lft 295sec\r\n    inet6 2001:50:7:55c:9422:ff:fe4a:4881/64 scope global dynamic mngtmpaddr \r\n       valid_lft 295sec preferred_lft 295sec\r\n    inet6 fe80::9422:ff:fe4a:4881/64 scope link \r\n       valid_lft forever preferred_lft forever\r\n", "assert": null}, {"title": "[log]SSID", "time": 1753074620.2973728, "code": null, "screen": null, "desc": null, "traceback": null, "log": "mWifiInfo SSID: \"XBTEN-6G\", BSSID", "assert": null}, {"title": "check_wifi", "time": 1753074620.2997065, "code": {"name": "check_wifi", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}]}, "screen": {"src": null, "rect": [], "pos": [], "vector": [], "confidence": null}, "desc": null, "traceback": "", "log": "", "assert": null}, {"title": "[log]Ping Test", "time": 1753074624.4187577, "code": null, "screen": null, "desc": null, "traceback": null, "log": "PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\r\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=32.6 ms\r\n64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=31.9 ms\r\n64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=63.0 ms\r\n64 bytes from 8.8.8.8: icmp_seq=4 ttl=114 time=34.0 ms\r\n\r\n--- 8.8.8.8 ping statistics ---\r\n4 packets transmitted, 4 received, 0% packet loss, time 3005ms\r\nrtt min/avg/max/mdev = 31.931/40.423/63.068/13.097 ms\r\n", "assert": null}, {"title": "ping_test", "time": 1753074626.4223552, "code": {"name": "ping_test", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}, {"key": "my_job", "value": "v4"}]}, "screen": {"src": null, "rect": [], "pos": [], "vector": [], "confidence": null}, "desc": null, "traceback": "", "log": "", "assert": null}, {"title": "[log]Ping Test", "time": 1753074630.5767665, "code": null, "screen": null, "desc": null, "traceback": null, "log": "PING www.google.com (142.250.198.68) 56(84) bytes of data.\r\n64 bytes from lctsaa-ab-in-f4.1e100.net (142.250.198.68): icmp_seq=1 ttl=115 time=58.6 ms\r\n64 bytes from lctsaa-ab-in-f4.1e100.net (142.250.198.68): icmp_seq=2 ttl=115 time=66.5 ms\r\n64 bytes from lctsaa-ab-in-f4.1e100.net (142.250.198.68): icmp_seq=3 ttl=115 time=58.5 ms\r\n64 bytes from lctsaa-ab-in-f4.1e100.net (142.250.198.68): icmp_seq=4 ttl=115 time=60.4 ms\r\n\r\n--- www.google.com ping statistics ---\r\n4 packets transmitted, 4 received, 0% packet loss, time 3013ms\r\nrtt min/avg/max/mdev = 58.581/61.058/66.537/3.260 ms\r\n", "assert": null}, {"title": "ping_test", "time": 1753074632.5832415, "code": {"name": "ping_test", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}, {"key": "my_job", "value": "domain"}]}, "screen": {"src": null, "rect": [], "pos": [], "vector": [], "confidence": null}, "desc": null, "traceback": "", "log": "", "assert": null}, {"title": "[log]Open Browser", "time": 1753074654.9554772, "code": null, "screen": {"src": "log\\1753074654883.jpg", "rect": [], "pos": [], "vector": [], "confidence": null, "resolution": [1440, 3120], "_filepath": "log\\1753074654883.jpg", "thumbnail": "log\\1753074654883_small.jpg"}, "desc": null, "traceback": null, "log": "Open Browser", "assert": null}, {"title": "browse_web", "time": 1753074657.052539, "code": {"name": "browse_web", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}]}, "screen": {"src": null, "rect": [], "pos": [], "vector": [], "confidence": null}, "desc": null, "traceback": "", "log": "", "assert": null}, {"title": "[log]Play Youtube-1", "time": 1753074666.332619, "code": null, "screen": {"src": "log\\1753074666245.jpg", "rect": [], "pos": [], "vector": [], "confidence": null, "resolution": [1440, 3120], "_filepath": "log\\1753074666245.jpg", "thumbnail": "log\\1753074666245_small.jpg"}, "desc": null, "traceback": null, "log": "Play Youtube", "assert": null}, {"title": "[log]Play Youtube-2", "time": 1753074672.0593836, "code": null, "screen": {"src": "log\\1753074671966.jpg", "rect": [], "pos": [], "vector": [], "confidence": null, "resolution": [1440, 3120], "_filepath": "log\\1753074671966.jpg", "thumbnail": "log\\1753074671966_small.jpg"}, "desc": null, "traceback": null, "log": "Play Youtube", "assert": null}, {"title": "[log]Play Youtube-3", "time": 1753074677.8634455, "code": null, "screen": {"src": "log\\1753074677773.jpg", "rect": [], "pos": [], "vector": [], "confidence": null, "resolution": [1440, 3120], "_filepath": "log\\1753074677773.jpg", "thumbnail": "log\\1753074677773_small.jpg"}, "desc": null, "traceback": null, "log": "Play Youtube", "assert": null}, {"title": "[log]Play Youtube-4", "time": 1753074683.7316961, "code": null, "screen": {"src": "log\\1753074683655.jpg", "rect": [], "pos": [], "vector": [], "confidence": null, "resolution": [1440, 3120], "_filepath": "log\\1753074683655.jpg", "thumbnail": "log\\1753074683655_small.jpg"}, "desc": null, "traceback": null, "log": "Play Youtube", "assert": null}, {"title": "[log]Play Youtube-5", "time": 1753074689.4739637, "code": null, "screen": {"src": "log\\1753074689411.jpg", "rect": [], "pos": [], "vector": [], "confidence": null, "resolution": [1440, 3120], "_filepath": "log\\1753074689411.jpg", "thumbnail": "log\\1753074689411_small.jpg"}, "desc": null, "traceback": null, "log": "Play Youtube", "assert": null}, {"title": "watch_youtube", "time": 1753074695.494782, "code": {"name": "watch_youtube", "args": [{"key": "mobile_name", "value": "Galaxy_S25_Ultra"}]}, "screen": null, "desc": null, "traceback": "", "log": "", "assert": null}], "name": "D:\\Code\\Airtest\\Result\\2025_07_21-10_58_09\\6G_Test\\android_function.log", "scale": 0.5, "test_result": true, "run_end": 1753074695.494782, "run_start": 1753074537.3627205, "static_root": "static//", "lang": "en", "records": [], "info": {"name": "android_function.py", "path": "D:\\Code\\Airtest\\Result\\2025_07_21-10_58_09\\6G_Test\\android_function.log\\android_function.py", "author": "", "title": "", "desc": "", "devices": {}}, "log": "log\\log.txt", "console": ""};
+      lang = new Lang();
+      lang.init({
+        defaultLang: 'en',
+        currentLang: 'en'
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div id="main" class="main col-md-12">
+          <div id="back_multi"></div>
+          <h1 class="title">Airtest Report </h1>
+          
+          <div class="summary" >
+
+            <div class="show-horizontal">
+              <div class="info info1">
+                <div class="info-left">
+                  <img id='result-img' />
+                </div>
+                <div class="info-right">
+                  <div class="info-title"><span lang='en'>Airtest Report</span>
+                    <label id='result-desc' lang="en"></label>
+                  </div>
+                  <div class="info-content">
+                    <div class='info-sub start'></div>
+                    <div class='info-sub time'></div>
+                  </div>
+                  <div class="info-toal">
+                    <div class="info-step">
+                      <span class="info-name" lang="en">Steps: </span>
+                      <span class="info-value">18</span>
+                    </div>
+                    <div class="info-time">
+                      <span class="info-name" lang="en">Time: </span>
+                      <span class="info-value duration">xxx</span>
+                    </div>
+                    
+                    
+                    <div class="info-log">
+                      <span class="info-name" lang="en">Log: </span>
+                      <span class="info-value log">
+                        <a href="log\log.txt" target="_blank" download="log.txt">log.txt <img src="static//image/download_log.svg" /></a>
+                      </span>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="info info2">
+                <div class="info-left"></div>
+                <div class="info-right">
+                  <div class="info-title"><span lang='en'>Executors</span></div>
+                  <div class="info-content">
+                    <div class="info-execute">
+                      <div class="circle-img"></div>
+                      
+                        <div class="info-name" lang="en">Author: Anonymous</div>
+                      
+                    </div>
+                    <div class="info-execute">
+                      <div class="circle-img"></div>
+                      <div class="info-file" title="D:\Code\Airtest\Result\2025_07_21-10_58_09\6G_Test\android_function.log\android_function.py">android_function.py
+                        <img id="copy_path" class="copy-img" data-value="D:\Code\Airtest\Result\2025_07_21-10_58_09\6G_Test\android_function.log\android_function.py" title="copy file path to clipboard" src="static//image/copy.svg" />
+                      </div>
+                    </div>
+
+                    
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="device" id='device'>
+          </div>
+          <!-- 可以额外显示自定义模块，支持插入Html内容 -->
+          
+          <div class="gallery">
+            <div class="info-title"><span lang="en">Quick view</span></div>
+            <div class ='placeholder'>
+              <div class="content">
+              </div>
+            </div>
+          </div>
+
+          <!--单步-->
+          
+          
+          <div class="steps">
+            <div class="content">
+              <div class="steps-head">
+                <div class="head-left">
+                  <div class="order" id='order'><span lang="en">order</span></div>
+                  <div class="order" id='duration'><span lang="en">duration</span></div>
+                  <div class="order" id='status'><span lang="en">status</span></div>
+                </div>
+                <div class="head-right">
+                  <span lang="en" class="jump-wrong" id='jump-wrong'>Jump to wrong step</span>
+                  <span lang="en">Filter by:</span>
+                  <span class="filters">
+                    <span lang="en" class="filter" id="all" alt="show all steps">All</span>
+                    <span lang="en" class="filter" id='success' alt="show success steps only">Success</span>
+                    <span lang="en" class="filter" id='fail' alt="show failed steps only">Failed</span>
+                    <span lang="en" class="filter" id="assert" alt="show steps with assertion only">Assert</span>
+                  </span>
+                </div>
+              </div>
+              <div class="steps-content">
+                <div class="step-left" id='step-left'>
+                  <div class="step-list"></div>
+                  <div id="pageTool"></div>
+                </div>
+                <div class="step-right" id='step-right'></div>
+              </div>
+            </div>
+            
+            </div>
+        </div>
+        
+      
+      <div class="footer">
+        <div class="footer-content">
+          <div class="foo">
+            <div class="interfaces">
+              <a class="icon" href="https://github.com/AirtestProject/Airtest"  target="_blank">
+                <img src="static//image/Airtest.png" alt="airtest">
+              </a>
+              <a class="icon" href="https://github.com/AirtestProject/poco"  target="_blank">
+                <img src="static//image/poco.png" alt="Poco">
+              </a>
+            </div>
+          </div>
+          <div class="foo">
+            <div class="apps">
+              <a class="icon ide" href="http://airtest.netease.com/"  target="_blank">
+                <img src="static//image/AirtestIDE.png" alt="AirtestIDE">
+              </a>
+              <a class="icon" href="https://airlab.163.com/"  target="_blank">
+                <img src="static//image/AirLab.png" alt="AirLab">
+              </a>
+            </div>
+          </div>
+          <div class="foo">
+            <div class="corp">
+                <img src="static//image/netease.png" alt="NetEase">
+                <span lang="en">© 1997 - 2020 NetEase, Inc. All Rights Reserved.</span>
+            </div>
+          </div>
+        </div>
+      </div> 
+      
+      </div>
+      <!-- 录屏 -->
+      <div class="row gif-wrap show">
+          <div class="menu">
+            <div class="pattern pattern1">
+              <div class="minimize">
+                <img title="minimize" src="static//image/minimize.svg" />
+              </div>
+              <div class="close">
+                <img title="close" src="static//image/close.svg" />
+              </div>
+            </div>
+            <div class="pattern pattern2">
+              <div class="maximize">
+                <img title="maximize" src="static//image/maximize.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            
+          </div>
+        </div>
+        <!-- max pic -->
+      <div id='magnify' class="mask hide">
+        <div class="content">
+        </div>
+      </div>
+    </div>
+
+  <link href="static//css/monokai_sublime.min.css" rel="stylesheet">
+  <script src="static//js/highlight.min.js"></script>
+  <script type="text/javascript" src="static//js/paging.js"></script>
+  <script src="static//js/report.js"></script>
+</body>
+</html>
