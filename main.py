@@ -3,7 +3,6 @@ import re
 import time
 
 from datetime import datetime
-from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 from find_html import find_html_files  
