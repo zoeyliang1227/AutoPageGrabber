@@ -4,7 +4,6 @@ import time
 
 from datetime import datetime
 from bs4 import BeautifulSoup
-# from playwright.sync_api import sync_playwright
 
 timestamp = datetime.now().strftime("%Y%m%d")
 screenshot_root = os.path.join(os.getcwd(), f"{timestamp}_screenshot")
@@ -13,25 +12,13 @@ def ensure_folder(path):
     if not os.path.exists(path):
         os.makedirs(path)
 
-# def convert_web_page(file_path):
-#     html_path = os.path.abspath(file_path)
-#     url = "file://" + html_path  
-
-#     with sync_playwright() as p:
-#         browser = p.chromium.launch(headless=False) 
-#         page = browser.new_page()
-#         page.goto(url)
-#         page.wait_for_timeout(3000)
-#         html = page.content()
-#         search_data_from_html(page, html)
-
 def search_data_from_html(page, html, item):
     soup = BeautifulSoup(html, "html.parser")
     step_list = soup.find("div", class_="step-list")
     get_mobile_name = re.search(r"mobile_name:\s*(\S+)", page.locator("#step-right").inner_text())
     if get_mobile_name:
         mobile_name = get_mobile_name.group(1)
-        # print(f"mobile_name = {mobile_name}")
+        print(f"mobile_name = {mobile_name}")
 
     for step in step_list:
         index = step.get("index")
