@@ -2,22 +2,26 @@ import os
 
 from pathlib import Path
 
+html_files = {}
+
 def find_html_files():
-    html_place=''
-    html_files = {}
-    for root, dirs, files in os.walk(os.getcwd()):
-        for file in files:
-            if file.endswith(".html"):
-                # print(root, dirs, file)
-                full_path = os.path.join(Path(root), file)
-                html_place = Path(root)
-                html_files[file]=html_place
-                # print("找到 HTML 檔案：", full_path)
-    
+    for month in Path(os.getcwd()).iterdir():
+        if month.is_dir() and month.name.startswith('2025'):    # is_dir判斷是否為資料夾
+            for items in month.iterdir():
+                if items.is_dir() and items.name.endswith('_Test'):
+                    item = str(items).rstrip("\\").split("\\")[-1]
+                    if item not in html_files:
+                        html_files[item] = {}
+
+                    for mobile in items.iterdir():
+                        if mobile.is_dir():
+                            for file in mobile.glob('*.html'):
+                                html_files[item][mobile.name] = str(file)
+
     # print(html_files)
 
-    return html_place, html_files
+    return html_files
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     find_html_files()
