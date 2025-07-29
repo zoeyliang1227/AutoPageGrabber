@@ -17,7 +17,6 @@ def mobile_excel():
         screenshot_path = os.path.join(os.getcwd(), screenshot)
 
     for folder in os.listdir(screenshot_path):
-        print(screenshot_path)
         folder_path = os.path.join(screenshot_path, folder)
 
         if not os.path.isdir(folder_path):
