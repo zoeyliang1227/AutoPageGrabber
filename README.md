@@ -1,8 +1,8 @@
 ># Windows
 
 ## Description
-- Use **playwright** and **beautifulsoup4** to create a .html page
-- Extract the necessary data and integrate it into Excel
+- Use **playwright** and **beautifulsoup4** to create a `.html` page
+- Extract the necessary data and integrate it into `Excel`
 - Integrate reports using **Robot Framework**
 
 ## Install
