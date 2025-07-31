@@ -12,9 +12,11 @@ from search_data import search_data_from_html
 timestamp = datetime.now().strftime("%Y%m%d")
 screenshot_root = os.path.join(os.getcwd(), f"{timestamp}_screenshot")
 
-def extract_data_from_html():
+def extract_data_from_html(target_mobile=None):
     for item, path_list in find_html_files().items():
         for mobile, path in path_list.items():
+            if target_mobile and mobile != target_mobile:
+                continue
             convert_web_page(mobile, str(path), item)
         
     mobile_excel()
