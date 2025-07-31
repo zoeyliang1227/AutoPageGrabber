@@ -9,6 +9,7 @@ playwright = "*"
 pandas = "*"
 pyinstaller = "*"
 openpyxl = "*"
+robotframework = "*"
 
 [dev-packages]
 

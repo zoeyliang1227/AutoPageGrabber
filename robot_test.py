@@ -1,6 +1,8 @@
 from find_html import find_html_files
 
-def robot_file(robot_filename="test.robot"):
+robot_filename="test.robot"
+
+def robot_file():
     data = find_html_files()
 
     test_cases = []

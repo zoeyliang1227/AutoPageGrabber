@@ -11,6 +11,9 @@ Use **playwright** and **beautifulsoup4** to put `.html` on the web page and cra
 - python -m pipenv shell
 
 ## Run
-- robot_file.py
+- main.py > Main program
+- robot_file.py > Create .robot
+- test.robot > Run the robot
+
 <!-- pyinstaller -F <python file>   # 打包成單執行檔，適合小檔
 pyinstaller -D <python file>   # 打包成多個文件，適合框架類程式 -->
