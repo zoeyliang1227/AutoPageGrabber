@@ -14,14 +14,15 @@ screenshot_root = os.path.join(os.getcwd(), f"{timestamp}_screenshot")
 
 def extract_data_from_html(target_item, target_mobile):
     for item, path_list in find_html_files().items():
-        for mobile, path in path_list.items():
-            if target_mobile and mobile != target_mobile:
-                continue
-            convert_web_page(mobile, str(path), item, target_item)
+        if item and item == target_item:
+            for mobile, path in path_list.items():
+                if target_mobile and mobile != target_mobile:
+                    continue
+                convert_web_page(mobile, str(path), target_item)
         
     # mobile_excel()
 
-def convert_web_page(mobile, file_path, item, target_item):
+def convert_web_page(mobile, file_path, target_item):
     html_path = os.path.abspath(file_path)
     url = "file://" + html_path  
 
@@ -31,7 +32,7 @@ def convert_web_page(mobile, file_path, item, target_item):
         page.goto(url)
         page.wait_for_timeout(3000)
         html = page.content()
-        search_data_from_html(page, html, item, target_item)
+        search_data_from_html(page, html, target_item)
 
 if __name__ == "__main__":
     extract_data_from_html()
