@@ -16,6 +16,7 @@
 - main.py > Main program
 - robot_file.py > Create .robot
 - test.robot > Run the robot
+- ./run.sh > Run the robot and data_processing.py
 
 <!-- pyinstaller -F <python file>   # 打包成單執行檔，適合小檔
 pyinstaller -D <python file>   # 打包成多個文件，適合框架類程式 -->

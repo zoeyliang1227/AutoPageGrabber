@@ -1,6 +1,6 @@
 from find_html import find_html_files
 
-robot_filename="test.robot"
+robot_filename="mobile.robot"
 
 def robot_file():
     data = find_html_files()
@@ -11,7 +11,7 @@ def robot_file():
         for mobile in mobile_dict.keys():
             test_name = f"{item}_{mobile}".replace(" ", "_")
             case = f"""{test_name}
-    extract_data_from_html    {mobile}
+    extract_data_from_html    {item}    {mobile}
 """
             test_cases.append(case)
 
